@@ -10,8 +10,14 @@ Remove-Item C:\Users\nickh\OneDrive\Desktop\*.lnk -Force -Verbose
 # Requires Root
 # Remove-Item C:\Users\Public\Desktop\*.lnk -Force -Verbose
 
+[System.IO.Directory]::CreateDirectory($ACTIVE)
+[System.IO.Directory]::CreateDirectory($ARCHIVE)
+[System.IO.Directory]::CreateDirectory($UTIL)
+[System.IO.Directory]::CreateDirectory($SCRIPTS)
+[System.IO.Directory]::CreateDirectory($MISC)
+
 Get-ChildItem -PATH $DESKTOP |
-  ForEach-Object -Process {
+ForEach-Object -Process {
     if ($_.ToString().StartsWith('#')) {
         Move-Item -Path ($DESKTOP + $_.Name + '\') -Destination $ARCHIVE
     }

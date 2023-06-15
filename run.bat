@@ -1,1 +1,1 @@
-powershell -File C:/Users/nickh/OneDrive/Desktop/_scripts/$organizer-ps/organizer.ps1
+powershell -File C:/Users/nickh/OneDrive/Desktop/_scripts/$fileorganizer-ps/organizer.ps1
