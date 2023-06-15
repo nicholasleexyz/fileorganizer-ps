@@ -6,7 +6,7 @@ When ran, desktop shortcuts get deleted because I never use them and they add a 
 
 ## Usage
 
-### _archive prefix
+### _archive prefix "#"
 
 For project directories that are not actively being changed.
 
@@ -16,7 +16,7 @@ Add "#" to the start of a directory to tag it as archived
 #DIRECTORY_NAME
 ```
 
-### _util prefix
+### _util prefix "@"
 
 For directories that contain reference documents or assets.
 
@@ -26,7 +26,7 @@ Add "@" to the start of a directory to tag it as archived
 @DIRECTORY_NAME
 ```
 
-### _scripts prefix
+### _scripts prefix "$"
 
 For scripty projects. Such as this one.
 
@@ -36,7 +36,7 @@ Add "$" to the start of a directory to tag it as archived
 $DIRECTORY_NAME
 ```
 
-### _active prefix
+### _active prefix "!"
 
 For project directories currently being worked on.
 
